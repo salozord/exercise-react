@@ -6,7 +6,7 @@ class Board extends Component {
     state = { 
         boards: [
             {
-                board: 'To do',
+                board: 'To-Do',
                 tasks: [
                     {
                         name: 'Task No. 1',
@@ -35,14 +35,14 @@ class Board extends Component {
                 tasks: []
             }
         ]
-     };
+    };
     render() { 
         return ( 
             <div>
                 <div className="Title">
-                    <h1>KanbanApp</h1>
+                    <h1 className="m-0">KanbanApp</h1>
                 </div>
-                <hr></hr>
+                <hr />
                 <div className="container-fluid">
                     <div className="row">
                         { 

@@ -13,13 +13,13 @@ class Task extends Component {
     render() { 
         return ( 
             <div className="card m-3">
-                <div className="card-title text-black-50">
-                    <h4>Task: { this.state.name }</h4>
+                <div className="card-header">
+                    <h5 className="m-0">Task: { this.state.name }</h5>
                 </div>
                 <div className="card-body">
                     <p className="text-body">{ this.state.description }</p>
                     <div className="d-flex justify-content-end">
-                        <button className="btn btn-primary" onClick={this.finishTask}>Finish</button>
+                        <button className="btn btn-success" onClick={this.finishTask}>Finish</button>
                     </div>
                 </div>
             </div>
