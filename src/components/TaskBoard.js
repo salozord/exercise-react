@@ -18,8 +18,8 @@ class TaskBoard extends Component {
     addTask = (event) => {
         event.preventDefault();
         console.log(`Adding new task to: ${this.state.board}`);
-        this.props.tasks.push({ id: this.form.name, name: this.form.name, description: this.form.description });
-        this.setState({ tasks: this.props.tasks });
+        this.state.tasks.push({ id: this.form.name, name: this.form.name, description: this.form.description });
+        this.setState({ tasks: this.state.tasks });
     }
     render() { 
         return ( 
